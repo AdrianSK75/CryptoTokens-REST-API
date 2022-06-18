@@ -13,6 +13,6 @@ const tokenSchema = new mongoose.Schema({
         type: Boolean,
         required: true
     }
-})
+}, {timestamps: true})
 
 module.exports = mongoose.model("Token", tokenSchema)
